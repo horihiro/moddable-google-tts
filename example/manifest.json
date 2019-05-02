@@ -1,0 +1,16 @@
+{
+  "build": {
+    "GOOGLE_TTS": "../../moddable-google-tts",
+  },
+  "include": [
+    "$(GOOGLE_TTS)/manifest_google_tts.json",
+  ],
+  "preload": [
+    "google-tts",
+  ],
+  "modules": {
+    "*": [
+      "./main"
+    ]
+  }
+}

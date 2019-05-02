@@ -1,0 +1,29 @@
+{
+  "build": {
+    "POLYFILL": "../moddable-polyfill-esp"
+  },
+  "include": [
+    "$(POLYFILL)/all/net/manifest_net.json",
+  ],
+  "resources": {
+    "*": [
+      "$(MODULES)/crypt/data/ca23",
+    ]
+  },
+  "creation": {
+    "static": 65536,
+    "stack": 384,
+  },
+  "modules": {
+    "*": [
+      "./google-tts",
+      "./lib/*"
+    ]
+  },
+  "preload": [
+    "fetch",
+    "URL",
+    "setTimeout",
+    "http",
+  ],
+}
