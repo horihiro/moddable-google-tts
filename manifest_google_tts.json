@@ -11,7 +11,7 @@
     ]
   },
   "creation": {
-    "static": 65536,
+    "static": 98304,
     "stack": 384,
   },
   "modules": {
